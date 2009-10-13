@@ -1,0 +1,11 @@
+--- cciss_vol_status-1.04/cciss_vol_status.c~	2009-09-21 18:12:23.000000000 +0300
++++ cciss_vol_status-1.04/cciss_vol_status.c	2009-10-13 09:39:20.227199332 +0300
+@@ -988,7 +988,7 @@
+ 	if (status < 0) 
+ 		return 0;
+ 	for (i = 0; i < (sizeof(hpsa_prod) / sizeof(hpsa_prod[0])); i++) {
+-		if (strncmp(std_inq+8, hpsa_prod[i], strnlen(hpsa_prod[i])) == 0)
++		if (strncmp(std_inq+8, hpsa_prod[i], strlen(hpsa_prod[i])) == 0)
+ 			return 1;
+ 	}
+ 	return 0;
