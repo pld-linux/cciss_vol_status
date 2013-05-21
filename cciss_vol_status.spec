@@ -1,13 +1,13 @@
 Summary:	Shows status of logical drives attached to HP SmartArray controllers
 Summary(pl.UTF-8):	Wyświetla status logicznych dysków stworzonych w kontrolerach HP SmartArray
 Name:		cciss_vol_status
-Version:	1.09
+Version:	1.10
 Release:	1
 License:	GPL v2+
 Group:		Applications
 Source0:	http://dl.sourceforge.net/cciss/%{name}-%{version}.tar.gz
-# Source0-md5:	2d94cb0c6abc217de95ade6c66d14132
-URL:		http://cciss.sourceforge.net/
+# Source0-md5:	991eae1be94cc4cabad2cad7d4bccc9e
+URL:		http://cciss.sourceforge.net/#cciss_utils
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	linux-libc-headers
@@ -36,7 +36,6 @@ dysków kontrolera Smart Array jak również MSA1000.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
