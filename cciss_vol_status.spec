@@ -4,8 +4,8 @@ Name:		cciss_vol_status
 Version:	1.11
 Release:	1
 License:	GPL v2+
-Group:		Applications
-Source0:	http://dl.sourceforge.net/cciss/%{name}-%{version}.tar.gz
+Group:		Applications/System
+Source0:	http://downloads.sourceforge.net/cciss/%{name}-%{version}.tar.gz
 # Source0-md5:	e97de30e79874fb479d766c638421483
 URL:		http://cciss.sourceforge.net/#cciss_utils
 BuildRequires:	autoconf
