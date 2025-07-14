@@ -25,7 +25,7 @@ dysków kontrolera Smart Array jak również MSA1000.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
